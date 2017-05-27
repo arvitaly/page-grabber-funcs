@@ -1,0 +1,13 @@
+export function sel<T extends { [index: string]: any }>(selector: string, obj: T): T | null;
+export function sel<T extends Array<{ [index: string]: any }>>(selector: string, obj: T): T;
+export function sel<T extends string>(selector: string, obj: T): T | null;
+export function child(index: number, el: any): any;
+export function text(): string;
+export function html(): string;
+export function val(): string;
+export function attr(name: string): string;
+export function css(name: string): string;
+export function hasClass(name: string): boolean;
+export function obj<T extends { [index: string]: any }>(path: string, obj: T): T;
+export function obj<T extends Array<{ [index: string]: any }>>(path: string, obj: T): T;
+export function obj(path: string): any;
